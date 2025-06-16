@@ -1,0 +1,38 @@
+<!-- chapters/chapter4.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>...</head>
+<body class="light">
+  <header><h1>Chapter 4: Functions</h1></header>
+  <div class="container">
+    <aside class="sidebar"><nav><ul>
+      <li><a href="chapter3.html">Prev</a></li>
+      <li><a href="chapter5.html">Next</a></li>
+    </ul></nav></aside>
+    <main>
+      <section><h2>4.1 Defining Functions</h2><p>Functions encapsulate reusable code.</p></section>
+      <section><h2>4.2 Example: Factorial</h2>
+        <pre><code class="language-python">def factorial(n):
+    return 1 if n <= 1 else n * factorial(n-1)
+print(factorial(5))</code></pre>
+      </section>
+      <section><h2>Exercise</h2>
+        <a href="../scripts/chapter4_exercise.py" download>Download chapter4_exercise.py</a>
+        <pre><code class="language-python"># chapter4_exercise.py
+def factorial_recursive(n):
+    return 1 if n <= 1 else n * factorial_recursive(n-1)
+
+def factorial_iterative(n):
+    result = 1
+    for i in range(2, n+1):
+        result *= i
+    return result
+
+num = int(input("Enter a non-negative integer: "))
+print(f"Recursive: {factorial_recursive(num)}")
+print(f"Iterative: {factorial_iterative(num)}")</code></pre>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

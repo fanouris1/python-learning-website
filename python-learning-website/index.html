@@ -1,0 +1,50 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Learning Seminar</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Highlight.js for syntax highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+<body class="light">
+  <header>
+    <h1>Python Learning Seminar</h1>
+    <button id="theme-toggle">Toggle Theme</button>
+  </header>
+  <div class="container">
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chapters/chapter1.html">Chapter 1: Introduction</a></li>
+          <li><a href="chapters/chapter2.html">Chapter 2: Data Types & Variables</a></li>
+          <li><a href="chapters/chapter3.html">Chapter 3: Control Flow</a></li>
+          <li><a href="chapters/chapter4.html">Chapter 4: Functions</a></li>
+          <li><a href="chapters/chapter5.html">Chapter 5: Modules & Packages</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <section>
+        <h2>Welcome to the Python Learning Seminar</h2>
+        <p>Explore the chapters in the sidebar. Each chapter includes theory, examples, and exercises.</p>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <p>&copy; 2025 Python Learning Seminar</p>
+  </footer>
+  <script>
+    const btn = document.getElementById('theme-toggle');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      document.body.classList.toggle('light');
+    });
+  </script>
+</body>
+</html>
